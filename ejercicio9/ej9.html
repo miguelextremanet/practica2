@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ej 9: Cat Walk</title>
+  </head>
+  <body>
+    <a href="../index.html">BACK</a>
+    <img
+      id="myCat"      
+      style="position: absolute; left: 10px"
+      src="http://www.anniemation.com/clip_art/images/cat-walk.gif"
+    />
+    <script>
+
+      var avance=10;
+      
+      window.setInterval(function(){        
+        catWalk();
+    }, 250);
+
+      function catWalk()
+      {
+        var gato = document.getElementById('myCat');                
+        var posicion_actual = parseInt(gato.style.left.replace('px', ''))
+        var ancho_ventana=screen.width;
+        var ancho_gato = gato.width;
+        
+        if (posicion_actual >= (ancho_ventana-ancho_gato)) {
+          posicion_actual = 0;
+        }
+        gato.style.left = posicion_actual + avance + 'px';
+      }
+    </script>
+  </body>
+</html>

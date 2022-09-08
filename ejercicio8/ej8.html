@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ejercicio 8 - Votaciones en gráfico</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- TAGSD REQUERIDOS POR BOOTSTRAP -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+<style>
+  .chart-container {
+  position: relative;
+  margin: auto;
+  height: 40vh;
+  width: 40vw;
+}
+
+
+</style>
+
+
+  <body>
+    <div class="container text-center">
+      
+      <a href="../index.html">BACK</a>
+        <div class="row">    
+        <h1>Votaciones</h1>
+        
+        <div class="container">
+          <button type="button" onclick="vote(0)">Socialistas</button>
+          <button type="button" onclick="vote(1)">Liberales</button>
+          <button type="button" onclick="vote(2)">Animalistas</button>
+          <button type="button" onclick="vote(3)">Centristas</button>
+          <button type="button" onclick="vote(4)">Ecologistas</button>
+          <button type="button" onclick="reset()">Reset</button>
+        </div>
+        
+        <div class="chart-container">
+            <div><canvas id="myChart"></canvas></div>       
+        </div>
+          
+        </div>        
+      </div>
+    </div>
+
+
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

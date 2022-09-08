@@ -1,0 +1,12 @@
+.additional {
+}
+
+.additional.hidden {
+  /* vuestro CSS aquí */
+  display: none;
+}
+
+.additional.visible {
+  /* vuestro CSS aquí */
+  display: block;
+}
